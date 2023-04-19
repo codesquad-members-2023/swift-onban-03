@@ -41,6 +41,11 @@ class ProductCollectionViewCell: UICollectionViewCell {
   }
   
   func addTags(_ tags: [Tag]) {
+    guard tags.isEmpty == false else {
+      tagStackView.superview?.isHidden = true
+      return
+    }
+    
     for (i, tag) in tags.enumerated() {
       let tagLabel = TagLabel()
       tagLabel.configure(index: i, name: tag.name)
