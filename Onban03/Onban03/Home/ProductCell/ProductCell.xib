@@ -31,27 +31,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wax-pO-i8y">
                                 <rect key="frame" x="130" y="0.0" width="228" height="130"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gf1-2t-nIw">
-                                        <rect key="frame" x="8" y="16" width="212" height="98"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gf1-2t-nIw">
+                                        <rect key="frame" x="8" y="23.666666666666671" width="212" height="83"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="100" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="apr-U1-TUs">
-                                                <rect key="frame" x="0.0" y="0.0" width="212" height="51"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="100" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="apr-U1-TUs">
+                                                <rect key="frame" x="0.0" y="0.0" width="212" height="47"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오리 주물럭_반조리" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6t-ea-0hB">
                                                         <rect key="frame" x="0.0" y="0.0" width="212" height="15.666666666666666"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="RIK-6i-7Hn"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="감질맛 나는 매콤한 양념" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UsH-iJ-nDA">
-                                                        <rect key="frame" x="0.0" y="17.666666666666668" width="212" height="15.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="15.666666666666668" width="212" height="15.666666666666668"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" red="0.52941176469999995" green="0.57254901960000004" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DEy-rM-ACC">
-                                                        <rect key="frame" x="0.0" y="35.333333333333336" width="212" height="15.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="31.333333333333332" width="212" height="15.666666666666675"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="12,640원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-cb-ZJx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="15.666666666666666"/>
@@ -68,12 +71,16 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="UsH-iJ-nDA" firstAttribute="height" secondItem="s6t-ea-0hB" secondAttribute="height" id="8YF-Sj-Pig"/>
+                                                    <constraint firstItem="DEy-rM-ACC" firstAttribute="height" secondItem="s6t-ea-0hB" secondAttribute="height" id="91H-eo-MP9"/>
+                                                </constraints>
                                             </stackView>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-vL-WqO">
-                                                <rect key="frame" x="0.0" y="59" width="212" height="39"/>
+                                                <rect key="frame" x="0.0" y="47" width="212" height="36"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lek-Nn-7cj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="212" height="20"/>
+                                                        <rect key="frame" x="0.0" y="8" width="212" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="B9a-xF-Wwh"/>
                                                         </constraints>
@@ -82,19 +89,18 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Lek-Nn-7cj" firstAttribute="leading" secondItem="xMb-vL-WqO" secondAttribute="leading" id="7Ya-wi-sEv"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Lek-Nn-7cj" secondAttribute="bottom" id="KMI-vh-woL"/>
+                                                    <constraint firstItem="Lek-Nn-7cj" firstAttribute="centerY" secondItem="xMb-vL-WqO" secondAttribute="centerY" id="I6A-cu-BXd"/>
                                                     <constraint firstAttribute="trailing" secondItem="Lek-Nn-7cj" secondAttribute="trailing" priority="250" id="oF9-Ze-Scd"/>
-                                                    <constraint firstItem="Lek-Nn-7cj" firstAttribute="top" secondItem="xMb-vL-WqO" secondAttribute="top" id="x1K-Ft-nju"/>
+                                                    <constraint firstAttribute="height" constant="36" id="rz6-ie-dvc"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="gf1-2t-nIw" secondAttribute="bottom" constant="16" id="5dA-nK-yQq"/>
                                     <constraint firstAttribute="trailing" secondItem="gf1-2t-nIw" secondAttribute="trailing" constant="8" id="KjP-KY-3aH"/>
+                                    <constraint firstItem="gf1-2t-nIw" firstAttribute="centerY" secondItem="wax-pO-i8y" secondAttribute="centerY" id="NYM-k2-kbH"/>
                                     <constraint firstItem="gf1-2t-nIw" firstAttribute="leading" secondItem="wax-pO-i8y" secondAttribute="leading" constant="8" id="R4t-hn-Jfl"/>
-                                    <constraint firstItem="gf1-2t-nIw" firstAttribute="top" secondItem="wax-pO-i8y" secondAttribute="top" constant="16" id="rGR-Kb-pIt"/>
                                 </constraints>
                             </view>
                         </subviews>
