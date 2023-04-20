@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F435AFA729F1051F00311918 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435AFA629F1051F00311918 /* Product.swift */; };
 		F44702C229ED17A200BD8A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44702C129ED17A200BD8A3A /* AppDelegate.swift */; };
 		F44702C429ED17A200BD8A3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44702C329ED17A200BD8A3A /* SceneDelegate.swift */; };
 		F44702C929ED17A200BD8A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44702C729ED17A200BD8A3A /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F435AFA629F1051F00311918 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F44702BE29ED17A200BD8A3A /* Onban03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onban03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44702C129ED17A200BD8A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44702C329ED17A200BD8A3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F435AFA529F1050400311918 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4FF76DF29EFDE390037A4E7 /* ProductCategory.swift */,
+				F435AFA629F1051F00311918 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F44702B529ED17A200BD8A3A = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +104,7 @@
 				F4FF76DD29EFDD740037A4E7 /* ProductCell */,
 				F4FF76DE29EFDD830037A4E7 /* Header */,
 				F44702DF29ED375100BD8A3A /* HomeViewController.swift */,
-				F4FF76DF29EFDE390037A4E7 /* ProductCategory.swift */,
+				F435AFA529F1050400311918 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -191,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4FF76DA29EFC4A00037A4E7 /* ProductCollectionHeader.swift in Sources */,
+				F435AFA729F1051F00311918 /* Product.swift in Sources */,
 				F44702DE29ED372E00BD8A3A /* ProductCollectionViewCell.swift in Sources */,
 				F4FF76D629EF84B40037A4E7 /* TagLabel.swift in Sources */,
 				F44702C229ED17A200BD8A3A /* AppDelegate.swift in Sources */,
