@@ -15,13 +15,6 @@ class ProductCollectionViewCell: UICollectionViewCell {
   
   @IBOutlet weak var tagStackView: UIStackView!
   
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    
-    thumbnailImageView.layer.cornerRadius = 5
-    thumbnailImageView.layer.masksToBounds = true
-  }
-  
   override func awakeFromNib() {
     guard let text = regularPriceLabel.text else { return }
     let attributedString = NSMutableAttributedString(string: text)
@@ -29,6 +22,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
                                   value: NSUnderlineStyle.single.rawValue,
                                   range: NSRange(location: 0, length: attributedString.length))
     regularPriceLabel.attributedText = attributedString
+    thumbnailImageView.layer.cornerRadius = 5
+    thumbnailImageView.layer.masksToBounds = true
   }
   
   override func prepareForReuse() {
