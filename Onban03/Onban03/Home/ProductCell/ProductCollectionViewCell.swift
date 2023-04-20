@@ -42,8 +42,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     }
     
     for (index, tag) in tags.enumerated() {
-      let tagLabel = TagLabel()
-      tagLabel.configure(index: index, name: tag.name)
+      let tagLabel = TagLabel(index: index, name: tag.name)
       tagStackView.addArrangedSubview(tagLabel)
     }
   }
