@@ -18,6 +18,14 @@ class TagLabel: UILabel {
     return contentSize
   }
   
+  convenience init(index: Int, name: String) {
+    self.init() 
+    text = name
+    font = UIFont.systemFont(ofSize: 8, weight: .bold, width: .standard)
+    textColor = .white
+    setBackgroundColor(index)
+  }
+  
   func configure(index: Int, name: String) {
     text = name
     font = UIFont.systemFont(ofSize: 8, weight: .bold, width: .standard)
