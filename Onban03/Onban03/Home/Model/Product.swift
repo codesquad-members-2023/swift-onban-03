@@ -10,7 +10,7 @@ import Foundation
 struct Product {
   var category: ProductCategory
   
-  var thumbnailImageUrl: URL
+  var thumbnailImageUrl: URL?
   
   var name: String
   
@@ -18,7 +18,7 @@ struct Product {
   
   var tagPrice: Int
   
-  var discountedPrice: Int
+  var discountedPrice: Int?
   
   var tags: [Tag]
 }

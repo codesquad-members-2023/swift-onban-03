@@ -116,6 +116,9 @@
             </collectionViewCellContentView>
             <size key="customSize" width="329" height="231"/>
             <connections>
+                <outlet property="boldPriceLabel" destination="sgc-cb-ZJx" id="8Cm-4f-Gju"/>
+                <outlet property="briefDescriptionLabel" destination="UsH-iJ-nDA" id="hIL-mD-ZAf"/>
+                <outlet property="nameLabel" destination="s6t-ea-0hB" id="Rsb-vy-w70"/>
                 <outlet property="regularPriceLabel" destination="uib-yp-b3K" id="nKA-gp-Rtb"/>
                 <outlet property="tagStackView" destination="Lek-Nn-7cj" id="erm-he-yIc"/>
                 <outlet property="thumbnailImageView" destination="09A-q8-Fuj" id="nCb-Ki-4B9"/>
