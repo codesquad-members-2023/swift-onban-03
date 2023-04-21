@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
   
   @IBOutlet weak var collectionView: UICollectionView!
   
-  var sections: [ProductCategory] = [.main, .side, .soup]
+  var products: [CategoryProducts] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,21 +30,24 @@ class HomeViewController: UIViewController {
     if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
       flowLayout.estimatedItemSize = .zero
     }
+    
+    let mock = DataMock()
+    self.products = mock.products
   }
 }
 
 extension HomeViewController: UICollectionViewDataSource {
   func numberOfSections(in collectionView: UICollectionView) -> Int {
-    return sections.count
+    return products.count
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 5
+    return products[section].products.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell", for: indexPath) as! ProductCollectionViewCell
-    cell.configure(tags: [Tag(name: "BEST"), Tag(name: "NEW"), Tag(name: "이벤트특가")])
+    cell.configure(product: products[indexPath.section].products[indexPath.item])
     return cell
   }
   
@@ -52,7 +55,7 @@ extension HomeViewController: UICollectionViewDataSource {
     switch kind {
     case UICollectionView.elementKindSectionHeader:
       let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "categoryView", for: indexPath) as! ProductCollectionHeader
-      headerView.configure(withTitle: sections[indexPath.section].sectionTitle)
+      headerView.configure(category: products[indexPath.section].category)
       return headerView
     default:
       assert(false)
@@ -66,8 +69,7 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-          return CGSize(width: collectionView.frame.width - (16 * 2),
-                        height: 130)
-      }
-
+    return CGSize(width: collectionView.frame.width - (16 * 2),
+                  height: 130)
+  }
 }

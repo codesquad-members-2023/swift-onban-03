@@ -11,6 +11,12 @@ class ProductCollectionViewCell: UICollectionViewCell {
   
   @IBOutlet weak var thumbnailImageView: UIImageView!
   
+  @IBOutlet weak var nameLabel: UILabel!
+  
+  @IBOutlet weak var briefDescriptionLabel: UILabel!
+  
+  @IBOutlet weak var boldPriceLabel: UILabel!
+  
   @IBOutlet weak var regularPriceLabel: UILabel!
   
   @IBOutlet weak var tagStackView: UIStackView!
@@ -31,8 +37,18 @@ class ProductCollectionViewCell: UICollectionViewCell {
     tagStackView.arrangedSubviews.forEach { view in view.removeFromSuperview() }
   }
   
-  func configure(tags: [Tag]) {
-    addTags(tags)
+  func configure(product: Product) {
+    nameLabel.text = product.name
+    briefDescriptionLabel.text = product.briefDescription
+    
+    if let discountedPrice = product.discountedPrice {
+      boldPriceLabel.text = "\(discountedPrice)원"
+      regularPriceLabel.text = "\(product.tagPrice)원"
+    } else {
+      boldPriceLabel.text = "\(product.tagPrice)원"
+      regularPriceLabel.text = ""
+    }
+    addTags(product.tags)
   }
   
   func addTags(_ tags: [Tag]) {
@@ -48,6 +64,4 @@ class ProductCollectionViewCell: UICollectionViewCell {
   }
 }
 
-struct Tag {
-  let name: String
-}
+

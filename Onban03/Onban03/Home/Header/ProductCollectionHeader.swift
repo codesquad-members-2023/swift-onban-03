@@ -11,7 +11,7 @@ class ProductCollectionHeader: UICollectionReusableView {
   
   @IBOutlet weak var sectionTitle: UILabel!
   
-  func configure(withTitle title: String) {
-    sectionTitle.text = title
+  func configure(category: ProductCategory) {
+    sectionTitle.text = category.sectionTitle
   }
 }
