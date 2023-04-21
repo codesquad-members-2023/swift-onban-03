@@ -42,10 +42,10 @@ class ProductCollectionViewCell: UICollectionViewCell {
     briefDescriptionLabel.text = product.briefDescription
     
     if let discountedPrice = product.discountedPrice {
-      boldPriceLabel.text = "\(discountedPrice)원"
-      regularPriceLabel.text = "\(product.tagPrice)원"
+      boldPriceLabel.text = "\(discountedPrice.wonFormat())원"
+      regularPriceLabel.text = "\(product.tagPrice.wonFormat())원"
     } else {
-      boldPriceLabel.text = "\(product.tagPrice)원"
+      boldPriceLabel.text = "\(product.tagPrice.wonFormat())원"
       regularPriceLabel.text = ""
     }
     addTags(product.tags)
