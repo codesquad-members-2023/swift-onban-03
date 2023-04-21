@@ -8,7 +8,6 @@
 import UIKit
 
 class ProductCollectionViewCell: UICollectionViewCell {
-  
   @IBOutlet weak var thumbnailImageView: UIImageView!
   
   @IBOutlet weak var nameLabel: UILabel!

@@ -9,6 +9,7 @@ import UIKit
 
 class TagLabel: UILabel {
   private static let padding = UIEdgeInsets(top: 2.0, left: 12.0, bottom: 2.0, right: 12.0)
+  
   private static let colorNames = ["SecondaryOrange", "SecondaryYellow", "Primary200"]
   
   override var intrinsicContentSize: CGSize {
@@ -42,7 +43,6 @@ class TagLabel: UILabel {
     
     layer.cornerRadius = bounds.height / 2
     layer.masksToBounds = true
-    
   }
   
   func setBackgroundColor(_ index: Int) {

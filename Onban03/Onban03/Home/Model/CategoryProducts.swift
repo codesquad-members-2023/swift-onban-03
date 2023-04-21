@@ -9,5 +9,6 @@ import Foundation
 
 struct CategoryProducts {
   let category: ProductCategory
+  
   let products: [Product]
 }

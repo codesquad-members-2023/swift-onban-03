@@ -8,7 +8,6 @@
 import UIKit
 
 class ProductCollectionHeader: UICollectionReusableView {
-  
   @IBOutlet weak var sectionTitle: UILabel!
   
   func configure(category: ProductCategory) {
