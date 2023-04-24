@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		51E69C80809F89AF4A20C989 /* Pods-Onban03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onban03.debug.xcconfig"; path = "Target Support Files/Pods-Onban03/Pods-Onban03.debug.xcconfig"; sourceTree = "<group>"; };
 		878BFEE09DA02E2D2166A8CC /* Pods_Onban03.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Onban03.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC3363829F61C00004A686A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DC823119BB66A02ED926239F /* Pods-Onban03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onban03.release.xcconfig"; path = "Target Support Files/Pods-Onban03/Pods-Onban03.release.xcconfig"; sourceTree = "<group>"; };
 		F426445A29F221D2001951B5 /* CategoryProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProducts.swift; sourceTree = "<group>"; };
 		F426445C29F221EC001951B5 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		F44702B529ED17A200BD8A3A = {
 			isa = PBXGroup;
 			children = (
+				8FC3363829F61C00004A686A /* .swiftlint.yml */,
 				F44702C029ED17A200BD8A3A /* Onban03 */,
 				F44702BF29ED17A200BD8A3A /* Products */,
 				15444388C552C64AFD378153 /* Pods */,
