@@ -1,8 +1,11 @@
 disabled_rules: # 기본 규칙을 disable 합니다.
     - force_cast
+    - trailing_whitespace
+    - trailing_comma
 opt_in_rules: # 규칙을 추가합니다.
-    -
-line_length: 120
-ignores_comments: true
+    - 
+
+line_length: 130
+
 excluded:
     - Pods
