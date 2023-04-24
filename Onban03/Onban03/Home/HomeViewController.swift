@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
   @IBOutlet weak var collectionView: UICollectionView!
-  
+
   var products: [CategoryProducts] = []
   
   override func viewDidLoad() {
@@ -24,7 +24,6 @@ class HomeViewController: UIViewController {
     collectionView.register(headerNib,
                             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                             withReuseIdentifier: "categoryView")
-    
     
     if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
       flowLayout.estimatedItemSize = .zero
@@ -47,8 +46,10 @@ extension HomeViewController: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView,
                       cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell",
-                                                  for: indexPath) as! ProductCollectionViewCell
+    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell",
+                                                        for: indexPath) as? ProductCollectionViewCell else {
+      return UICollectionViewCell()
+    }
     cell.configure(product: products[indexPath.section].products[indexPath.item])
     return cell
   }
@@ -58,11 +59,13 @@ extension HomeViewController: UICollectionViewDataSource {
                       at indexPath: IndexPath) -> UICollectionReusableView {
     switch kind {
     case UICollectionView.elementKindSectionHeader:
-      let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                       withReuseIdentifier: "categoryView",
-                                                                       for: indexPath) as! ProductCollectionHeader
-      headerView.configure(category: products[indexPath.section].category)
-      return headerView
+      guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                         withReuseIdentifier: "categoryView",
+                                                                         for: indexPath) as? ProductCollectionHeader else {
+        return UICollectionReusableView()
+      }
+      header.configure(category: products[indexPath.section].category)
+      return header
     default:
       assert(false)
     }
