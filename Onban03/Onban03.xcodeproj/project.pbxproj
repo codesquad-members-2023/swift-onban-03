@@ -182,10 +182,10 @@
 			buildConfigurationList = F44702D229ED17A300BD8A3A /* Build configuration list for PBXNativeTarget "Onban03" */;
 			buildPhases = (
 				B6F1EFB592C1504A22CE4A00 /* [CP] Check Pods Manifest.lock */,
+				8F49F86D29F6186C00D054E8 /* ShellScript */,
 				F44702BA29ED17A200BD8A3A /* Sources */,
 				F44702BB29ED17A200BD8A3A /* Frameworks */,
 				F44702BC29ED17A200BD8A3A /* Resources */,
-				8F49F86D29F6186C00D054E8 /* ShellScript */,
 				98911B599A8AFE3406258C35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
