@@ -1,7 +1,39 @@
 # swift-onban-03
-팀03 - Effie, 에디
+> 팀03 - Effie, 에디
+
+<br/>
+
+## 1주차(4월 4주차) 주요 작업 내용
+
+<br/>
+
+프로젝트를 생성하고 필요한 리소스를 에셋으로 추가했습니다.
+
+- [x]  프로젝트 생성
+- [x]  ColorAsset 추가
+
+1단계 요구사항인 상품 목록 화면을 구성했습니다.
+
+- [x]  Home 화면을 스토리보드로 구성
+- [x]  상품 종류를 나타내는 ProductCategory 타입 추가
+- [x]  상품 리스트 collection view cell xib 파일 추가
+- [x]  ProductCollectionViewCell 구현
+- [x]  이벤트 태그 label 추가
+- [x]  리스트 collection view 헤더 xib 파일 추가
+- [x]  ProductCollectionHeader 구현
+- [x]  HomeViewController 구현
+
+![Simulator Screen Recording - iPhone 14 Pro - 2023-04-19 at 18 38 32](https://user-images.githubusercontent.com/56967908/233039016-df06433c-bdfc-4cb6-83d9-ea4d9ac8b5c9.gif)
+
+<br/>
+
+---
+
+<br/>
 
 ## 2주차(4월 5주차) 계획
+
+<br/>
 
 ### 25일 화요일
 
@@ -44,7 +76,11 @@
 - 이미지 다운로드 및 관련 처리 구현
 - POST 구현
 
+<br/>
+
 ---
+
+<br/>
 
 ## POOL
 
