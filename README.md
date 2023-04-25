@@ -41,10 +41,6 @@
 
 <br/>
 
----
-
-<br/>
-
 ## 🪵 1주차(4월 4주차) 주요 작업 내용
 
 <br/>
@@ -66,10 +62,6 @@
 - [x]  HomeViewController 구현
 
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-04-19 at 18 38 32](https://user-images.githubusercontent.com/56967908/233039016-df06433c-bdfc-4cb6-83d9-ea4d9ac8b5c9.gif)
-
-<br/>
-
----
 
 <br/>
 
@@ -120,10 +112,18 @@
 
 <br/>
 
----
-
-<br/>
-
 ## POOL
 
 - toaster는 언제 쓰이는 거지?
+
+<br/>
+
+## Onban03 팀 소개 
+
+|Effie|Eddy|
+|-|-|
+|<img src="https://avatars.githubusercontent.com/u/56967908?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/70703326?v=4" width="150" height="150"/>|
+|[@hyeffie](https://github.com/hyeffie)|[@raindropiOS](https://github.com/raindropiOS)|
+|||
+
+저희 팀은 설계와 구현, Navigator와 Driver 역할을 나누지 않고 진행하고 있습니다!
