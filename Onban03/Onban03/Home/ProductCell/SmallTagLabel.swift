@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TagLabel: UILabel {
+class SmallTagLabel: UILabel {
   private static let padding = UIEdgeInsets(top: 2.0, left: 12.0, bottom: 2.0, right: 12.0)
   
   private static let colorNames = ["SecondaryOrange", "SecondaryYellow", "Primary200"]
@@ -21,10 +21,7 @@ class TagLabel: UILabel {
   
   convenience init(index: Int, name: String) {
     self.init() 
-    text = name
-    font = UIFont.systemFont(ofSize: 8, weight: .bold, width: .standard)
-    textColor = .white
-    setBackgroundColor(index)
+    configure(index: index, name: name)
   }
   
   func configure(index: Int, name: String) {
