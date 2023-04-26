@@ -89,3 +89,11 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                   height: 130)
   }
 }
+
+extension HomeViewController: UICollectionViewDelegate {
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let storyboard = UIStoryboard(name: "ProductDetail", bundle: nil)
+    guard let productDetailVC = storyboard.instantiateInitialViewController() as? ProductDetailViewController else { return }
+    self.navigationController?.pushViewController(productDetailVC, animated: true)
+  }
+}
