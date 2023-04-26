@@ -14,6 +14,9 @@ class HomeViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.navigationItem.title = "오늘찬"
+    
     collectionView.dataSource = self
     collectionView.delegate = self
     
