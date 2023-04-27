@@ -8,7 +8,6 @@
 import UIKit
 
 class ProductDetailTableViewCell: UITableViewCell {
-  
   @IBOutlet var nameLabel: UILabel!
   
   @IBOutlet var descriptionLabel: UILabel!
@@ -19,7 +18,9 @@ class ProductDetailTableViewCell: UITableViewCell {
   
   @IBOutlet var tagCollection: UICollectionView!
   
-  private let flowLayout: UICollectionViewFlowLayout = {
+  let tempTags = Array(repeating: Tag(name: "BEST"), count: 10)
+  
+  private let collectionFlowLayout: UICollectionViewFlowLayout = {
     let layout = UICollectionViewFlowLayout()
     layout.minimumLineSpacing = 8.0
     layout.minimumInteritemSpacing = 4.0
@@ -31,9 +32,8 @@ class ProductDetailTableViewCell: UITableViewCell {
     super.awakeFromNib()
     
     tagCollection.isScrollEnabled = false
-    tagCollection.collectionViewLayout = flowLayout
+    tagCollection.collectionViewLayout = collectionFlowLayout
     tagCollection.dataSource = self
-    tagCollection.delegate = self
     
     let cellNib = UINib(nibName: "LargeTagCell", bundle: nil)
     tagCollection.register(cellNib, forCellWithReuseIdentifier: "tagCell")
@@ -47,27 +47,12 @@ extension ProductDetailTableViewCell: UICollectionViewDataSource {
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tagCell", for: indexPath) as? LargeTagCollectionViewCell else { return UICollectionViewCell() }
+    guard let cell = collectionView.dequeueReusableCell(
+      withReuseIdentifier: "tagCell",
+      for: indexPath) as? LargeTagCollectionViewCell else {
+      return UICollectionViewCell()
+    }
     cell.configure(index: indexPath.item, name: tempTags[indexPath.item].name)
     return cell
   }
 }
-
-extension ProductDetailTableViewCell: UICollectionViewDelegateFlowLayout {
-  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return CGSize(width: 60, height: 32)
-  }
-  
-  
-}
-
-
-let tempTags = [
-  Tag(name: "BEST"),
-  Tag(name: "NEW"),
-  Tag(name: "이벤트특가"),
-]
-
-
-// 가로 4
-// 세로 8

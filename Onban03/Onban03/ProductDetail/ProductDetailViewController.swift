@@ -36,14 +36,13 @@ extension ProductDetailViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     switch indexPath.section {
     case 1:
-      guard let cell = tableView.dequeueReusableCell(withIdentifier: "productDetailCell", for: indexPath) as? ProductDetailTableViewCell else { return UITableViewCell() }
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: "productDetailCell",
+        for: indexPath) as? ProductDetailTableViewCell else { return UITableViewCell() }
+      
       return cell
     default:
       return UITableViewCell()
     }
   }
-}
-
-extension ProductDetailViewController: UITableViewDelegate {
-  
 }

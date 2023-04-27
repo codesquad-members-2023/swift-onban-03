@@ -26,7 +26,7 @@ class LargeTagCollectionViewCell: UICollectionViewCell {
   
   func configure(index: Int, name: String) {
     nameLabel.text = name
-    nameLabel.font = UIFont.systemFont(ofSize: 8, weight: .bold, width: .standard)
+    nameLabel.font = UIFont.systemFont(ofSize: 11, weight: .bold, width: .standard)
     nameLabel.textColor = .white
     setBackgroundColor(index)
   }
