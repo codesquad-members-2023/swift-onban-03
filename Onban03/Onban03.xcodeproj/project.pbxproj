@@ -29,6 +29,8 @@
 		F4BFACA529F8C69E00445506 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFACA429F8C69E00445506 /* CustomNavigationController.swift */; };
 		F4EAB61E29F8EF6900FC2A3B /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EAB61D29F8EF6900FC2A3B /* ProductDetail.storyboard */; };
 		F4EAB62029F8F4D200FC2A3B /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAB61F29F8F4D200FC2A3B /* ProductDetailViewController.swift */; };
+		F4EAB62A29FA207300FC2A3B /* ProductEtcTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */; };
+		F4EAB62B29FA207300FC2A3B /* ProductEtcTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4EAB62929FA207300FC2A3B /* ProductEtcTableViewCell.xib */; };
 		F4FF76D829EFBDE10037A4E7 /* ProductCollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4FF76D729EFBDE10037A4E7 /* ProductCollectionViewHeader.xib */; };
 		F4FF76DA29EFC4A00037A4E7 /* ProductCollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF76D929EFC4A00037A4E7 /* ProductCollectionHeader.swift */; };
 		F4FF76E029EFDE390037A4E7 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF76DF29EFDE390037A4E7 /* ProductCategory.swift */; };
@@ -62,6 +64,8 @@
 		F4BFACA429F8C69E00445506 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		F4EAB61D29F8EF6900FC2A3B /* ProductDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
 		F4EAB61F29F8F4D200FC2A3B /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEtcTableViewCell.swift; sourceTree = "<group>"; };
+		F4EAB62929FA207300FC2A3B /* ProductEtcTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductEtcTableViewCell.xib; sourceTree = "<group>"; };
 		F4FF76D729EFBDE10037A4E7 /* ProductCollectionViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewHeader.xib; sourceTree = "<group>"; };
 		F4FF76D929EFC4A00037A4E7 /* ProductCollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionHeader.swift; sourceTree = "<group>"; };
 		F4FF76DF29EFDE390037A4E7 /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				8F52B81729F91078006C431C /* ProductDetailCell.xib */,
 				8FE7888E29F947150009D2D1 /* LargeTagCollectionViewCell.swift */,
 				8FE7889029F947380009D2D1 /* LargeTagCell.xib */,
+				F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */,
+				F4EAB62929FA207300FC2A3B /* ProductEtcTableViewCell.xib */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 				F44702CB29ED17A300BD8A3A /* Assets.xcassets in Resources */,
 				8F52B81829F91078006C431C /* ProductDetailCell.xib in Resources */,
 				F44702C929ED17A200BD8A3A /* Main.storyboard in Resources */,
+				F4EAB62B29FA207300FC2A3B /* ProductEtcTableViewCell.xib in Resources */,
 				F4EAB61E29F8EF6900FC2A3B /* ProductDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +361,7 @@
 				F426445F29F22483001951B5 /* Tag.swift in Sources */,
 				8FE7888D29F946AC0009D2D1 /* SmallTagLabel.swift in Sources */,
 				F4EAB62029F8F4D200FC2A3B /* ProductDetailViewController.swift in Sources */,
+				F4EAB62A29FA207300FC2A3B /* ProductEtcTableViewCell.swift in Sources */,
 				F4FF76E029EFDE390037A4E7 /* ProductCategory.swift in Sources */,
 				F44702E029ED375100BD8A3A /* HomeViewController.swift in Sources */,
 				F44702C429ED17A200BD8A3A /* SceneDelegate.swift in Sources */,

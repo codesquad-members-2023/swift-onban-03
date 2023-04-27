@@ -17,6 +17,9 @@ class ProductDetailViewController: UIViewController {
     
     let productDetailCellNib = UINib(nibName: "ProductDetailCell", bundle: nil)
     tableView.register(productDetailCellNib, forCellReuseIdentifier: "productDetailCell")
+    
+    let productEtcCellNib = UINib(nibName: "ProductEtcTableViewCell", bundle: nil)
+    tableView.register(productEtcCellNib, forCellReuseIdentifier: "productEtcTableViewCell")
   }
 }
 
@@ -39,7 +42,12 @@ extension ProductDetailViewController: UITableViewDataSource {
       guard let cell = tableView.dequeueReusableCell(
         withIdentifier: "productDetailCell",
         for: indexPath) as? ProductDetailTableViewCell else { return UITableViewCell() }
-      
+      return cell
+    case 2:
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: "productEtcTableViewCell",
+        for: indexPath) as? ProductEtcTableViewCell else { return UITableViewCell() }
+      cell.configure(with: "dummy text")
       return cell
     default:
       return UITableViewCell()
