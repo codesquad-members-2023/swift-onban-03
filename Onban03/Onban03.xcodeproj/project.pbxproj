@@ -12,6 +12,10 @@
 		8FE7888D29F946AC0009D2D1 /* SmallTagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7888C29F946AC0009D2D1 /* SmallTagLabel.swift */; };
 		8FE7888F29F947150009D2D1 /* LargeTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7888E29F947150009D2D1 /* LargeTagCollectionViewCell.swift */; };
 		8FE7889129F947380009D2D1 /* LargeTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7889029F947380009D2D1 /* LargeTagCell.xib */; };
+		8FE7889429FA1B680009D2D1 /* AmountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7889229FA1B680009D2D1 /* AmountTableViewCell.swift */; };
+		8FE7889529FA1B680009D2D1 /* AmountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7889329FA1B680009D2D1 /* AmountTableViewCell.xib */; };
+		8FE7889829FA24740009D2D1 /* OrderPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7889629FA24740009D2D1 /* OrderPriceTableViewCell.swift */; };
+		8FE7889929FA24740009D2D1 /* OrderPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7889729FA24740009D2D1 /* OrderPriceTableViewCell.xib */; };
 		E2C14DA5790D46E398EBA200 /* Pods_Onban03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878BFEE09DA02E2D2166A8CC /* Pods_Onban03.framework */; };
 		F426445B29F221D2001951B5 /* CategoryProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426445A29F221D2001951B5 /* CategoryProducts.swift */; };
 		F426445D29F221EC001951B5 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426445C29F221EC001951B5 /* DataMock.swift */; };
@@ -47,6 +51,10 @@
 		8FE7888C29F946AC0009D2D1 /* SmallTagLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallTagLabel.swift; sourceTree = "<group>"; };
 		8FE7888E29F947150009D2D1 /* LargeTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTagCollectionViewCell.swift; sourceTree = "<group>"; };
 		8FE7889029F947380009D2D1 /* LargeTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTagCell.xib; sourceTree = "<group>"; };
+		8FE7889229FA1B680009D2D1 /* AmountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTableViewCell.swift; sourceTree = "<group>"; };
+		8FE7889329FA1B680009D2D1 /* AmountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountTableViewCell.xib; sourceTree = "<group>"; };
+		8FE7889629FA24740009D2D1 /* OrderPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPriceTableViewCell.swift; sourceTree = "<group>"; };
+		8FE7889729FA24740009D2D1 /* OrderPriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPriceTableViewCell.xib; sourceTree = "<group>"; };
 		DC823119BB66A02ED926239F /* Pods-Onban03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onban03.release.xcconfig"; path = "Target Support Files/Pods-Onban03/Pods-Onban03.release.xcconfig"; sourceTree = "<group>"; };
 		F426445A29F221D2001951B5 /* CategoryProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProducts.swift; sourceTree = "<group>"; };
 		F426445C29F221EC001951B5 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
@@ -166,6 +174,10 @@
 				8F52B81729F91078006C431C /* ProductDetailCell.xib */,
 				8FE7888E29F947150009D2D1 /* LargeTagCollectionViewCell.swift */,
 				8FE7889029F947380009D2D1 /* LargeTagCell.xib */,
+				8FE7889229FA1B680009D2D1 /* AmountTableViewCell.swift */,
+				8FE7889329FA1B680009D2D1 /* AmountTableViewCell.xib */,
+				8FE7889629FA24740009D2D1 /* OrderPriceTableViewCell.swift */,
+				8FE7889729FA24740009D2D1 /* OrderPriceTableViewCell.xib */,
 				F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */,
 				F4EAB62929FA207300FC2A3B /* ProductEtcTableViewCell.xib */,
 				F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */,
@@ -280,6 +292,8 @@
 				F44702D629ED1E6400BD8A3A /* ProductCell.xib in Resources */,
 				F4FF76D829EFBDE10037A4E7 /* ProductCollectionViewHeader.xib in Resources */,
 				F44702CE29ED17A300BD8A3A /* LaunchScreen.storyboard in Resources */,
+				8FE7889929FA24740009D2D1 /* OrderPriceTableViewCell.xib in Resources */,
+				8FE7889529FA1B680009D2D1 /* AmountTableViewCell.xib in Resources */,
 				F4DE96AA29FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib in Resources */,
 				F44702CB29ED17A300BD8A3A /* Assets.xcassets in Resources */,
 				8F52B81829F91078006C431C /* ProductDetailCell.xib in Resources */,
@@ -372,6 +386,8 @@
 				F4FF76E029EFDE390037A4E7 /* ProductCategory.swift in Sources */,
 				F4DE96A929FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift in Sources */,
 				F44702E029ED375100BD8A3A /* HomeViewController.swift in Sources */,
+				8FE7889829FA24740009D2D1 /* OrderPriceTableViewCell.swift in Sources */,
+				8FE7889429FA1B680009D2D1 /* AmountTableViewCell.swift in Sources */,
 				F44702C429ED17A200BD8A3A /* SceneDelegate.swift in Sources */,
 				F426445D29F221EC001951B5 /* DataMock.swift in Sources */,
 			);
@@ -451,7 +467,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Onban03/Suppoting\\ Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -507,7 +523,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Onban03/Suppoting\\ Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -525,7 +541,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZJ4RXG2VY3;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Onban03/Suppoting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -533,12 +549,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codesquad-ios.Onban03";
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.codesquad.onban-03";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -554,7 +571,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZJ4RXG2VY3;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Onban03/Suppoting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -562,12 +579,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codesquad-ios.Onban03";
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.codesquad.onban-03";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
