@@ -27,6 +27,8 @@
 		F44702DE29ED372E00BD8A3A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44702DD29ED372E00BD8A3A /* ProductCollectionViewCell.swift */; };
 		F44702E029ED375100BD8A3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44702DF29ED375100BD8A3A /* HomeViewController.swift */; };
 		F4BFACA529F8C69E00445506 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFACA429F8C69E00445506 /* CustomNavigationController.swift */; };
+		F4DE96A929FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */; };
+		F4DE96AA29FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DE96A829FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib */; };
 		F4EAB61E29F8EF6900FC2A3B /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EAB61D29F8EF6900FC2A3B /* ProductDetail.storyboard */; };
 		F4EAB62029F8F4D200FC2A3B /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAB61F29F8F4D200FC2A3B /* ProductDetailViewController.swift */; };
 		F4EAB62A29FA207300FC2A3B /* ProductEtcTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */; };
@@ -62,6 +64,8 @@
 		F44702DD29ED372E00BD8A3A /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		F44702DF29ED375100BD8A3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4BFACA429F8C69E00445506 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailTableViewCell.swift; sourceTree = "<group>"; };
+		F4DE96A829FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailTableViewCell.xib; sourceTree = "<group>"; };
 		F4EAB61D29F8EF6900FC2A3B /* ProductDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
 		F4EAB61F29F8F4D200FC2A3B /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEtcTableViewCell.swift; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				8FE7889029F947380009D2D1 /* LargeTagCell.xib */,
 				F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */,
 				F4EAB62929FA207300FC2A3B /* ProductEtcTableViewCell.xib */,
+				F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */,
+				F4DE96A829FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				F44702D629ED1E6400BD8A3A /* ProductCell.xib in Resources */,
 				F4FF76D829EFBDE10037A4E7 /* ProductCollectionViewHeader.xib in Resources */,
 				F44702CE29ED17A300BD8A3A /* LaunchScreen.storyboard in Resources */,
+				F4DE96AA29FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib in Resources */,
 				F44702CB29ED17A300BD8A3A /* Assets.xcassets in Resources */,
 				8F52B81829F91078006C431C /* ProductDetailCell.xib in Resources */,
 				F44702C929ED17A200BD8A3A /* Main.storyboard in Resources */,
@@ -363,6 +370,7 @@
 				F4EAB62029F8F4D200FC2A3B /* ProductDetailViewController.swift in Sources */,
 				F4EAB62A29FA207300FC2A3B /* ProductEtcTableViewCell.swift in Sources */,
 				F4FF76E029EFDE390037A4E7 /* ProductCategory.swift in Sources */,
+				F4DE96A929FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift in Sources */,
 				F44702E029ED375100BD8A3A /* HomeViewController.swift in Sources */,
 				F44702C429ED17A200BD8A3A /* SceneDelegate.swift in Sources */,
 				F426445D29F221EC001951B5 /* DataMock.swift in Sources */,
@@ -517,7 +525,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y67S3384LP;
+				DEVELOPMENT_TEAM = ZJ4RXG2VY3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Onban03/Suppoting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -546,7 +554,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y67S3384LP;
+				DEVELOPMENT_TEAM = ZJ4RXG2VY3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Onban03/Suppoting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
