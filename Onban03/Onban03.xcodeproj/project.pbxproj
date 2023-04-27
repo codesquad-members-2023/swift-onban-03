@@ -33,6 +33,10 @@
 		F4BFACA529F8C69E00445506 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFACA429F8C69E00445506 /* CustomNavigationController.swift */; };
 		F4DE96A929FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */; };
 		F4DE96AA29FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DE96A829FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib */; };
+		F4DE96AD29FA47D900F6DAF8 /* ImageCarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DE96AB29FA47D900F6DAF8 /* ImageCarouselTableViewCell.swift */; };
+		F4DE96AE29FA47D900F6DAF8 /* ImageCarouselTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DE96AC29FA47D900F6DAF8 /* ImageCarouselTableViewCell.xib */; };
+		F4DE96B129FA491C00F6DAF8 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DE96AF29FA491C00F6DAF8 /* CarouselCollectionViewCell.swift */; };
+		F4DE96B229FA491C00F6DAF8 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DE96B029FA491C00F6DAF8 /* CarouselCollectionViewCell.xib */; };
 		F4EAB61E29F8EF6900FC2A3B /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EAB61D29F8EF6900FC2A3B /* ProductDetail.storyboard */; };
 		F4EAB62029F8F4D200FC2A3B /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAB61F29F8F4D200FC2A3B /* ProductDetailViewController.swift */; };
 		F4EAB62A29FA207300FC2A3B /* ProductEtcTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */; };
@@ -74,6 +78,10 @@
 		F4BFACA429F8C69E00445506 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailTableViewCell.swift; sourceTree = "<group>"; };
 		F4DE96A829FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailTableViewCell.xib; sourceTree = "<group>"; };
+		F4DE96AB29FA47D900F6DAF8 /* ImageCarouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselTableViewCell.swift; sourceTree = "<group>"; };
+		F4DE96AC29FA47D900F6DAF8 /* ImageCarouselTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCarouselTableViewCell.xib; sourceTree = "<group>"; };
+		F4DE96AF29FA491C00F6DAF8 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4DE96B029FA491C00F6DAF8 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
 		F4EAB61D29F8EF6900FC2A3B /* ProductDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
 		F4EAB61F29F8F4D200FC2A3B /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEtcTableViewCell.swift; sourceTree = "<group>"; };
@@ -182,6 +190,10 @@
 				F4EAB62929FA207300FC2A3B /* ProductEtcTableViewCell.xib */,
 				F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */,
 				F4DE96A829FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib */,
+				F4DE96AB29FA47D900F6DAF8 /* ImageCarouselTableViewCell.swift */,
+				F4DE96AC29FA47D900F6DAF8 /* ImageCarouselTableViewCell.xib */,
+				F4DE96AF29FA491C00F6DAF8 /* CarouselCollectionViewCell.swift */,
+				F4DE96B029FA491C00F6DAF8 /* CarouselCollectionViewCell.xib */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -296,7 +308,9 @@
 				8FE7889529FA1B680009D2D1 /* AmountTableViewCell.xib in Resources */,
 				F4DE96AA29FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib in Resources */,
 				F44702CB29ED17A300BD8A3A /* Assets.xcassets in Resources */,
+				F4DE96AE29FA47D900F6DAF8 /* ImageCarouselTableViewCell.xib in Resources */,
 				8F52B81829F91078006C431C /* ProductDetailCell.xib in Resources */,
+				F4DE96B229FA491C00F6DAF8 /* CarouselCollectionViewCell.xib in Resources */,
 				F44702C929ED17A200BD8A3A /* Main.storyboard in Resources */,
 				F4EAB62B29FA207300FC2A3B /* ProductEtcTableViewCell.xib in Resources */,
 				F4EAB61E29F8EF6900FC2A3B /* ProductDetail.storyboard in Resources */,
@@ -370,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DE96B129FA491C00F6DAF8 /* CarouselCollectionViewCell.swift in Sources */,
 				F4BFACA529F8C69E00445506 /* CustomNavigationController.swift in Sources */,
 				F4FF76DA29EFC4A00037A4E7 /* ProductCollectionHeader.swift in Sources */,
 				8FE7888F29F947150009D2D1 /* LargeTagCollectionViewCell.swift in Sources */,
@@ -390,6 +405,7 @@
 				8FE7889429FA1B680009D2D1 /* AmountTableViewCell.swift in Sources */,
 				F44702C429ED17A200BD8A3A /* SceneDelegate.swift in Sources */,
 				F426445D29F221EC001951B5 /* DataMock.swift in Sources */,
+				F4DE96AD29FA47D900F6DAF8 /* ImageCarouselTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
