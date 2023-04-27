@@ -8,16 +8,17 @@
 import UIKit
 
 class OrderPriceTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
+  
+  @IBOutlet var orderButton: UIButton!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    configureButtonLabel()
+  }
+  
+  func configureButtonLabel() {
+    let buttonLabel = orderButton.titleLabel
+    buttonLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold, width: .standard)
+    buttonLabel?.textColor = .white
+  }
 }
