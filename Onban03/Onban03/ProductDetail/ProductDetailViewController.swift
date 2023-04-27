@@ -23,6 +23,12 @@ class ProductDetailViewController: UIViewController {
     
     let imageDetailCellNib = UINib(nibName: "ImageDetailTableViewCell", bundle: nil)
     tableView.register(imageDetailCellNib, forCellReuseIdentifier: "imageDetailTableViewCell")
+    
+    let amountDetailCellNib = UINib(nibName: "AmountTableViewCell", bundle: nil)
+    tableView.register(amountDetailCellNib, forCellReuseIdentifier: "amountTableViewCell")
+    
+    let orderPriceDetailCellNib = UINib(nibName: "OrderPriceTableViewCell", bundle: nil)
+    tableView.register(orderPriceDetailCellNib, forCellReuseIdentifier: "orderPriceTableViewCell")
   }
 }
 
@@ -51,6 +57,16 @@ extension ProductDetailViewController: UITableViewDataSource {
         withIdentifier: "productEtcTableViewCell",
         for: indexPath) as? ProductEtcTableViewCell else { return UITableViewCell() }
       cell.configure(with: "dummy text")
+      return cell
+    case 3:
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: "amountTableViewCell",
+        for: indexPath) as? AmountTableViewCell else { return UITableViewCell() }
+      return cell
+    case 4:
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: "orderPriceTableViewCell",
+        for: indexPath) as? OrderPriceTableViewCell else { return UITableViewCell() }
       return cell
     case 5:
       guard let cell = tableView.dequeueReusableCell(
