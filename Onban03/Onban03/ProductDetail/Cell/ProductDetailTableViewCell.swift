@@ -35,8 +35,8 @@ class ProductDetailTableViewCell: UITableViewCell {
     tagCollection.collectionViewLayout = collectionFlowLayout
     tagCollection.dataSource = self
     
-    let cellNib = UINib(nibName: "LargeTagCell", bundle: nil)
-    tagCollection.register(cellNib, forCellWithReuseIdentifier: "tagCell")
+    let cellNib = UINib(nibName: "LargeTagCollectionViewCell", bundle: nil)
+    tagCollection.register(cellNib, forCellWithReuseIdentifier: "LargeTagCollectionViewCell")
   }
   
 }
@@ -48,7 +48,7 @@ extension ProductDetailTableViewCell: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     guard let cell = collectionView.dequeueReusableCell(
-      withReuseIdentifier: "tagCell",
+      withReuseIdentifier: "LargeTagCollectionViewCell",
       for: indexPath) as? LargeTagCollectionViewCell else {
       return UICollectionViewCell()
     }

@@ -15,23 +15,23 @@ class ProductDetailViewController: UIViewController {
     super.viewDidLoad()
     tableView.dataSource = self
     
-    let productDetailCellNib = UINib(nibName: "ProductDetailCell", bundle: nil)
-    tableView.register(productDetailCellNib, forCellReuseIdentifier: "productDetailCell")
+    let imageCarouselTableViewCellNib = UINib(nibName: "ImageCarouselTableViewCell", bundle: nil)
+    tableView.register(imageCarouselTableViewCellNib, forCellReuseIdentifier: "ImageCarouselTableViewCell")
+    
+    let productDetailCellNib = UINib(nibName: "ProductDetailTableViewCell", bundle: nil)
+    tableView.register(productDetailCellNib, forCellReuseIdentifier: "ProductDetailTableViewCell")
     
     let productEtcCellNib = UINib(nibName: "ProductEtcTableViewCell", bundle: nil)
-    tableView.register(productEtcCellNib, forCellReuseIdentifier: "productEtcTableViewCell")
-    
-    let imageDetailCellNib = UINib(nibName: "ImageDetailTableViewCell", bundle: nil)
-    tableView.register(imageDetailCellNib, forCellReuseIdentifier: "imageDetailTableViewCell")
+    tableView.register(productEtcCellNib, forCellReuseIdentifier: "ProductEtcTableViewCell")
     
     let amountDetailCellNib = UINib(nibName: "AmountTableViewCell", bundle: nil)
-    tableView.register(amountDetailCellNib, forCellReuseIdentifier: "amountTableViewCell")
+    tableView.register(amountDetailCellNib, forCellReuseIdentifier: "AmountTableViewCell")
     
     let orderPriceDetailCellNib = UINib(nibName: "OrderPriceTableViewCell", bundle: nil)
-    tableView.register(orderPriceDetailCellNib, forCellReuseIdentifier: "orderPriceTableViewCell")
+    tableView.register(orderPriceDetailCellNib, forCellReuseIdentifier: "OrderPriceTableViewCell")
     
-    let imageCarouselTableViewCellNib = UINib(nibName: "ImageCarouselTableViewCell", bundle: nil)
-    tableView.register(imageCarouselTableViewCellNib, forCellReuseIdentifier: "imageCarouselTableViewCell")
+    let imageDetailCellNib = UINib(nibName: "ImageDetailTableViewCell", bundle: nil)
+    tableView.register(imageDetailCellNib, forCellReuseIdentifier: "ImageDetailTableViewCell")
   }
 }
 
@@ -52,33 +52,33 @@ extension ProductDetailViewController: UITableViewDataSource {
     switch indexPath.section {
     case 0:
       guard let cell = tableView.dequeueReusableCell(
-        withIdentifier: "imageCarouselTableViewCell",
+        withIdentifier: "ImageCarouselTableViewCell",
         for: indexPath) as? ImageCarouselTableViewCell else { return UITableViewCell() }
       return cell
     case 1:
       guard let cell = tableView.dequeueReusableCell(
-        withIdentifier: "productDetailCell",
+        withIdentifier: "ProductDetailTableViewCell",
         for: indexPath) as? ProductDetailTableViewCell else { return UITableViewCell() }
       return cell
     case 2:
       guard let cell = tableView.dequeueReusableCell(
-        withIdentifier: "productEtcTableViewCell",
+        withIdentifier: "ProductEtcTableViewCell",
         for: indexPath) as? ProductEtcTableViewCell else { return UITableViewCell() }
       cell.configure(with: "dummy text")
       return cell
     case 3:
       guard let cell = tableView.dequeueReusableCell(
-        withIdentifier: "amountTableViewCell",
+        withIdentifier: "AmountTableViewCell",
         for: indexPath) as? AmountTableViewCell else { return UITableViewCell() }
       return cell
     case 4:
       guard let cell = tableView.dequeueReusableCell(
-        withIdentifier: "orderPriceTableViewCell",
+        withIdentifier: "OrderPriceTableViewCell",
         for: indexPath) as? OrderPriceTableViewCell else { return UITableViewCell() }
       return cell
     case 5:
       guard let cell = tableView.dequeueReusableCell(
-        withIdentifier: "imageDetailTableViewCell",
+        withIdentifier: "ImageDetailTableViewCell",
         for: indexPath) as? ImageDetailTableViewCell else { return UITableViewCell() }
       let dummyImageName = "DummyImageDetail"
       cell.configure(with: dummyImageName)

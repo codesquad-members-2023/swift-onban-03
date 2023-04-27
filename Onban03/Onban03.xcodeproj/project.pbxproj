@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8F02BBCD29F90F8500AF37A4 /* ProductDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02BBCC29F90F8500AF37A4 /* ProductDetailTableViewCell.swift */; };
-		8F52B81829F91078006C431C /* ProductDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F52B81729F91078006C431C /* ProductDetailCell.xib */; };
+		8F52B81829F91078006C431C /* ProductDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F52B81729F91078006C431C /* ProductDetailTableViewCell.xib */; };
 		8FE7888D29F946AC0009D2D1 /* SmallTagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7888C29F946AC0009D2D1 /* SmallTagLabel.swift */; };
 		8FE7888F29F947150009D2D1 /* LargeTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7888E29F947150009D2D1 /* LargeTagCollectionViewCell.swift */; };
-		8FE7889129F947380009D2D1 /* LargeTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7889029F947380009D2D1 /* LargeTagCell.xib */; };
+		8FE7889129F947380009D2D1 /* LargeTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7889029F947380009D2D1 /* LargeTagCollectionViewCell.xib */; };
 		8FE7889429FA1B680009D2D1 /* AmountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7889229FA1B680009D2D1 /* AmountTableViewCell.swift */; };
 		8FE7889529FA1B680009D2D1 /* AmountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE7889329FA1B680009D2D1 /* AmountTableViewCell.xib */; };
 		8FE7889829FA24740009D2D1 /* OrderPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7889629FA24740009D2D1 /* OrderPriceTableViewCell.swift */; };
@@ -50,11 +50,11 @@
 		51E69C80809F89AF4A20C989 /* Pods-Onban03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onban03.debug.xcconfig"; path = "Target Support Files/Pods-Onban03/Pods-Onban03.debug.xcconfig"; sourceTree = "<group>"; };
 		878BFEE09DA02E2D2166A8CC /* Pods_Onban03.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Onban03.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F02BBCC29F90F8500AF37A4 /* ProductDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTableViewCell.swift; sourceTree = "<group>"; };
-		8F52B81729F91078006C431C /* ProductDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailCell.xib; sourceTree = "<group>"; };
+		8F52B81729F91078006C431C /* ProductDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailTableViewCell.xib; sourceTree = "<group>"; };
 		8FC3363829F61C00004A686A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		8FE7888C29F946AC0009D2D1 /* SmallTagLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallTagLabel.swift; sourceTree = "<group>"; };
 		8FE7888E29F947150009D2D1 /* LargeTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTagCollectionViewCell.swift; sourceTree = "<group>"; };
-		8FE7889029F947380009D2D1 /* LargeTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTagCell.xib; sourceTree = "<group>"; };
+		8FE7889029F947380009D2D1 /* LargeTagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTagCollectionViewCell.xib; sourceTree = "<group>"; };
 		8FE7889229FA1B680009D2D1 /* AmountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTableViewCell.swift; sourceTree = "<group>"; };
 		8FE7889329FA1B680009D2D1 /* AmountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountTableViewCell.xib; sourceTree = "<group>"; };
 		8FE7889629FA24740009D2D1 /* OrderPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPriceTableViewCell.swift; sourceTree = "<group>"; };
@@ -164,13 +164,36 @@
 			isa = PBXGroup;
 			children = (
 				F4FF76DB29EFDCB30037A4E7 /* Suppoting Files */,
-				F44702C729ED17A200BD8A3A /* Main.storyboard */,
-				F4EAB62129F8F4F300FC2A3B /* ProductDetail */,
-				F4FF76DC29EFDD570037A4E7 /* Home */,
-				F44702CA29ED17A300BD8A3A /* Assets.xcassets */,
 				F44702CC29ED17A300BD8A3A /* LaunchScreen.storyboard */,
+				F44702C729ED17A200BD8A3A /* Main.storyboard */,
+				F4FF76DC29EFDD570037A4E7 /* Home */,
+				F4EAB62129F8F4F300FC2A3B /* ProductDetail */,
+				F44702CA29ED17A300BD8A3A /* Assets.xcassets */,
 			);
 			path = Onban03;
+			sourceTree = "<group>";
+		};
+		F4DE96B329FA6EBB00F6DAF8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F4DE96AB29FA47D900F6DAF8 /* ImageCarouselTableViewCell.swift */,
+				F4DE96AC29FA47D900F6DAF8 /* ImageCarouselTableViewCell.xib */,
+				F4DE96AF29FA491C00F6DAF8 /* CarouselCollectionViewCell.swift */,
+				F4DE96B029FA491C00F6DAF8 /* CarouselCollectionViewCell.xib */,
+				8F02BBCC29F90F8500AF37A4 /* ProductDetailTableViewCell.swift */,
+				8F52B81729F91078006C431C /* ProductDetailTableViewCell.xib */,
+				8FE7888E29F947150009D2D1 /* LargeTagCollectionViewCell.swift */,
+				8FE7889029F947380009D2D1 /* LargeTagCollectionViewCell.xib */,
+				F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */,
+				F4EAB62929FA207300FC2A3B /* ProductEtcTableViewCell.xib */,
+				8FE7889229FA1B680009D2D1 /* AmountTableViewCell.swift */,
+				8FE7889329FA1B680009D2D1 /* AmountTableViewCell.xib */,
+				8FE7889629FA24740009D2D1 /* OrderPriceTableViewCell.swift */,
+				8FE7889729FA24740009D2D1 /* OrderPriceTableViewCell.xib */,
+				F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */,
+				F4DE96A829FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F4EAB62129F8F4F300FC2A3B /* ProductDetail */ = {
@@ -178,22 +201,7 @@
 			children = (
 				F4EAB61D29F8EF6900FC2A3B /* ProductDetail.storyboard */,
 				F4EAB61F29F8F4D200FC2A3B /* ProductDetailViewController.swift */,
-				8F02BBCC29F90F8500AF37A4 /* ProductDetailTableViewCell.swift */,
-				8F52B81729F91078006C431C /* ProductDetailCell.xib */,
-				8FE7888E29F947150009D2D1 /* LargeTagCollectionViewCell.swift */,
-				8FE7889029F947380009D2D1 /* LargeTagCell.xib */,
-				8FE7889229FA1B680009D2D1 /* AmountTableViewCell.swift */,
-				8FE7889329FA1B680009D2D1 /* AmountTableViewCell.xib */,
-				8FE7889629FA24740009D2D1 /* OrderPriceTableViewCell.swift */,
-				8FE7889729FA24740009D2D1 /* OrderPriceTableViewCell.xib */,
-				F4EAB62829FA207300FC2A3B /* ProductEtcTableViewCell.swift */,
-				F4EAB62929FA207300FC2A3B /* ProductEtcTableViewCell.xib */,
-				F4DE96A729FA3FE000F6DAF8 /* ImageDetailTableViewCell.swift */,
-				F4DE96A829FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib */,
-				F4DE96AB29FA47D900F6DAF8 /* ImageCarouselTableViewCell.swift */,
-				F4DE96AC29FA47D900F6DAF8 /* ImageCarouselTableViewCell.xib */,
-				F4DE96AF29FA491C00F6DAF8 /* CarouselCollectionViewCell.swift */,
-				F4DE96B029FA491C00F6DAF8 /* CarouselCollectionViewCell.xib */,
+				F4DE96B329FA6EBB00F6DAF8 /* Cell */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -300,7 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FE7889129F947380009D2D1 /* LargeTagCell.xib in Resources */,
+				8FE7889129F947380009D2D1 /* LargeTagCollectionViewCell.xib in Resources */,
 				F44702D629ED1E6400BD8A3A /* ProductCell.xib in Resources */,
 				F4FF76D829EFBDE10037A4E7 /* ProductCollectionViewHeader.xib in Resources */,
 				F44702CE29ED17A300BD8A3A /* LaunchScreen.storyboard in Resources */,
@@ -309,7 +317,7 @@
 				F4DE96AA29FA3FE000F6DAF8 /* ImageDetailTableViewCell.xib in Resources */,
 				F44702CB29ED17A300BD8A3A /* Assets.xcassets in Resources */,
 				F4DE96AE29FA47D900F6DAF8 /* ImageCarouselTableViewCell.xib in Resources */,
-				8F52B81829F91078006C431C /* ProductDetailCell.xib in Resources */,
+				8F52B81829F91078006C431C /* ProductDetailTableViewCell.xib in Resources */,
 				F4DE96B229FA491C00F6DAF8 /* CarouselCollectionViewCell.xib in Resources */,
 				F44702C929ED17A200BD8A3A /* Main.storyboard in Resources */,
 				F4EAB62B29FA207300FC2A3B /* ProductEtcTableViewCell.xib in Resources */,

@@ -28,7 +28,7 @@ class ImageCarouselTableViewCell: UITableViewCell {
     carousel.collectionViewLayout = collectionFlowLayout
     
     let carouselCollectionViewCellNib = UINib(nibName: "CarouselCollectionViewCell", bundle: nil)
-    carousel.register(carouselCollectionViewCellNib, forCellWithReuseIdentifier: "carouselCollectionViewCell")
+    carousel.register(carouselCollectionViewCellNib, forCellWithReuseIdentifier: "CarouselCollectionViewCell")
   }
   
   func configure() {
@@ -43,7 +43,7 @@ extension ImageCarouselTableViewCell: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     guard let cell = collectionView.dequeueReusableCell(
-      withReuseIdentifier: "carouselCollectionViewCell",
+      withReuseIdentifier: "CarouselCollectionViewCell",
       for: indexPath) as? CarouselCollectionViewCell else { return UICollectionViewCell() }
     let dummyImageName = "DummyImageDetail"
     cell.configure(with: dummyImageName)
