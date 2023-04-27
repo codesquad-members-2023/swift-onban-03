@@ -14,6 +14,9 @@ class HomeViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.navigationItem.title = "오늘찬"
+    
     collectionView.dataSource = self
     collectionView.delegate = self
     
@@ -84,5 +87,13 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                       sizeForItemAt indexPath: IndexPath) -> CGSize {
     return CGSize(width: collectionView.frame.width - (16 * 2),
                   height: 130)
+  }
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let storyboard = UIStoryboard(name: "ProductDetail", bundle: nil)
+    guard let productDetailVC = storyboard.instantiateInitialViewController() as? ProductDetailViewController else { return }
+    self.navigationController?.pushViewController(productDetailVC, animated: true)
   }
 }

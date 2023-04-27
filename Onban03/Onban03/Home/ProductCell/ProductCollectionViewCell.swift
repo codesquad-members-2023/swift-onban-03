@@ -21,12 +21,9 @@ class ProductCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var tagStackView: UIStackView!
   
   override func awakeFromNib() {
-    guard let text = regularPriceLabel.text else { return }
-    let attributedString = NSMutableAttributedString(string: text)
-    attributedString.addAttribute(.strikethroughStyle,
-                                  value: NSUnderlineStyle.single.rawValue,
-                                  range: NSRange(location: 0, length: attributedString.length))
-    regularPriceLabel.attributedText = attributedString
+    regularPriceLabel.apply(style: .regularPriceSmall,
+                            colorName: .gray300)
+    
     thumbnailImageView.layer.cornerRadius = 5
     thumbnailImageView.layer.masksToBounds = true
   }
@@ -57,7 +54,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     }
     
     for (index, tag) in tags.enumerated() {
-      let tagLabel = TagLabel(index: index, name: tag.name)
+      let tagLabel = SmallTagLabel(index: index, name: tag.name)
       tagStackView.addArrangedSubview(tagLabel)
     }
   }
