@@ -31,7 +31,7 @@ class CustomNavigationController: UINavigationController {
   func configureBarAppearance() {
     let barAppearance = UINavigationBarAppearance()
     barAppearance.backgroundColor = .white
-    barAppearance.shadowColor = UIColor(named: "Gray300")
+    barAppearance.shadowColor = ColorName.gray200.color
     navigationBar.scrollEdgeAppearance = barAppearance
     navigationBar.standardAppearance = barAppearance
   }

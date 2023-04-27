@@ -31,6 +31,11 @@ class ProductDetailTableViewCell: UITableViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     
+    nameLabel.apply(style: .boldLarge, colorName: .black)
+    descriptionLabel.apply(style: .bodyMedium, colorName: .gray300)
+    boldPriceLabel.apply(style: .boldMedium, colorName: .gray400)
+    regularPriceLabel.apply(style: .regularPriceMedium, colorName: .gray300)
+    
     tagCollection.isScrollEnabled = false
     tagCollection.collectionViewLayout = collectionFlowLayout
     tagCollection.dataSource = self

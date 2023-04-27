@@ -10,7 +10,14 @@ import UIKit
 class LargeTagCollectionViewCell: UICollectionViewCell {
   @IBOutlet var nameLabel: UILabel!
   
-  private static let colorNames = ["SecondaryOrange", "SecondaryYellow", "Primary200"]
+  private static let colors = [ColorName.secondaryOrange.color,
+                               ColorName.secondaryYellow.color,
+                               ColorName.primary200.color]
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    nameLabel.apply(style: .boldXSmall, colorName: .white)
+  }
   
   override func layoutSubviews() {
     super.layoutSubviews()
@@ -20,14 +27,11 @@ class LargeTagCollectionViewCell: UICollectionViewCell {
   }
   
   func setBackgroundColor(_ index: Int) {
-    let colorName = Self.colorNames[index % Self.colorNames.count]
-    self.backgroundColor = UIColor(named: colorName)
+    self.backgroundColor = Self.colors[index % Self.colors.count]
   }
   
   func configure(index: Int, name: String) {
     nameLabel.text = name
-    nameLabel.font = UIFont.systemFont(ofSize: 11, weight: .bold, width: .standard)
-    nameLabel.textColor = .white
     setBackgroundColor(index)
   }
 }

@@ -23,8 +23,8 @@
                         <rect key="frame" x="16" y="26" width="322" height="19"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수량" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RV-lg-LZ0">
-                                <rect key="frame" x="0.0" y="0.0" width="30" height="19"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="22.666666666666668" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" name="Gray300"/>
                                 <nil key="highlightedColor"/>
                             </label>

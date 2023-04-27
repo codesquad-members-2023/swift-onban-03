@@ -18,7 +18,6 @@ class OrderPriceTableViewCell: UITableViewCell {
   
   func configureButtonLabel() {
     let buttonLabel = orderButton.titleLabel
-    buttonLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold, width: .standard)
-    buttonLabel?.textColor = .white
+    buttonLabel?.apply(style: .boldMedium, colorName: .white)
   }
 }
