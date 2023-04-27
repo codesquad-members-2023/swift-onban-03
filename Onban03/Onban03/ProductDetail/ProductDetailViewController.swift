@@ -23,6 +23,9 @@ class ProductDetailViewController: UIViewController {
     
     let imageDetailCellNib = UINib(nibName: "ImageDetailTableViewCell", bundle: nil)
     tableView.register(imageDetailCellNib, forCellReuseIdentifier: "imageDetailTableViewCell")
+    
+    let imageCarouselTableViewCellNib = UINib(nibName: "ImageCarouselTableViewCell", bundle: nil)
+    tableView.register(imageCarouselTableViewCellNib, forCellReuseIdentifier: "imageCarouselTableViewCell")
   }
 }
 
@@ -41,6 +44,11 @@ extension ProductDetailViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     switch indexPath.section {
+    case 0:
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: "imageCarouselTableViewCell",
+        for: indexPath) as? ImageCarouselTableViewCell else { return UITableViewCell() }
+      return cell
     case 1:
       guard let cell = tableView.dequeueReusableCell(
         withIdentifier: "productDetailCell",
