@@ -110,11 +110,57 @@
 - 이미지 다운로드 및 관련 처리 구현
 - POST 구현
 
+### 화요일, 수요일, 목요일
+
+같이
+
+- [x]  상세 화면 요구사항 분석 및 동기화
+
+상세 화면 구현 UI w/ 스토리보드
+
+- [x]  navigation controller embed (스토리보드)
+- [x]  segue 화면 전환
+- [x]  상세 화면 table view 디자인
+- [x]  상세 화면 cell 디자인
+    - [x]  이미지 컨테이너 (에피)
+    - [x]  태그 포함 cell - collection view? (같이)D
+    - [x]  적립금, 배송정보, 배송비 (에피)
+    - [x]  수량 (에디)
+    - [x]  주문금액 + 주문하기 버튼 (에디)
+    - [x]  상세 설명 이미지 (에피)
+- [x]  cell 디자인 다 하고 pull 받아서 파일, 클래스, identifier 네이밍 맞추기
+
+에피
+
+- [x]  paging
+
+### 목요일, 금요일
+
+학습
+
+- [ ]  HTTP
+- [ ]  URLSession
+- [ ]  URLSessionDelegate
+- [ ]  json 인코딩, 디코딩 - Codable
+
+설계
+
+- [ ]  데이터 관련 작업 객체의 역할
+- [ ]  데이터 요청 시점
+
+### 토요일
+
 <br/>
 
 ## POOL
 
-- toaster는 언제 쓰이는 거지?
+UI 이슈
+
+- [ ]  tag cloud width 문제
+- [ ]  table view cell의 … cell xib에서 주는 게 inset 최선인지 고민해보기
+
+UIkit
+- scrollEdgeAppearance 알아보기
 
 <br/>
 
