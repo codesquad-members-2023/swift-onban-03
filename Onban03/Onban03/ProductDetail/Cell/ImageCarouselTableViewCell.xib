@@ -53,6 +53,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="carousel" destination="Wpj-Gz-kO8" id="zT0-Uq-tab"/>
+                <outlet property="pager" destination="wEV-S3-orW" id="vIF-S4-qVs"/>
             </connections>
             <point key="canvasLocation" x="66.412213740458014" y="63.380281690140848"/>
         </tableViewCell>

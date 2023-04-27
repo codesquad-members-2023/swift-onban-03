@@ -10,6 +10,10 @@ import UIKit
 class ImageCarouselTableViewCell: UITableViewCell {
   @IBOutlet weak var carousel: UICollectionView!
   
+  @IBOutlet weak var pager: UIPageControl!
+  
+  let numberOfImages = 3
+  
   private let collectionFlowLayout: UICollectionViewFlowLayout = {
     let layout = UICollectionViewFlowLayout()
     layout.scrollDirection = .horizontal
@@ -26,19 +30,20 @@ class ImageCarouselTableViewCell: UITableViewCell {
     
     carousel.showsHorizontalScrollIndicator = false
     carousel.collectionViewLayout = collectionFlowLayout
+    carousel.isPagingEnabled = true
     
     let carouselCollectionViewCellNib = UINib(nibName: "CarouselCollectionViewCell", bundle: nil)
     carousel.register(carouselCollectionViewCellNib, forCellWithReuseIdentifier: "CarouselCollectionViewCell")
   }
   
   func configure() {
-    
+    pager.numberOfPages = numberOfImages
   }
 }
 
 extension ImageCarouselTableViewCell: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 3
+    return numberOfImages
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -57,5 +62,15 @@ extension ImageCarouselTableViewCell: UICollectionViewDelegateFlowLayout {
                       sizeForItemAt indexPath: IndexPath) -> CGSize {
     let size = collectionView.frame.width
     return CGSize(width: size, height: size)
+  }
+}
+
+extension ImageCarouselTableViewCell: UIScrollViewDelegate {
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let offset = scrollView.contentOffset.x
+    let width = scrollView.frame.width
+    let currentPosition = offset / width
+    
+    pager.currentPage = Int(currentPosition.rounded())
   }
 }
